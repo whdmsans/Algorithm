@@ -7,16 +7,17 @@ int main(void) {
     cin.tie(0);
     ios::sync_with_stdio(0);
 
-    int n;
-    queue<int> queue1;
-    cin >> n;
-    for (int i = 1; i <= n; i++) {
-        queue1.push(i);
+    int N;
+    cin >> N;
+    queue<int> q;
+    for (int i = 1; i <= N; i++) {
+        q.push(i);
     }
-    for (; queue1.size() != 1;) {
-        queue1.pop();
-        queue1.push(queue1.front());
-        queue1.pop();
+    while (q.size() > 1) {
+        q.pop();
+        q.push(q.front());
+        q.pop();
     }
-    cout << queue1.front();
+    cout << q.front();
+    return 0;
 }

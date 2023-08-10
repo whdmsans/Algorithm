@@ -3,7 +3,7 @@
 using namespace std;
 
 int N;
-pair<double, double> point[10000];
+pair<int, int> point[10000];
 
 double CCW(pair<double, double> p1, pair<double, double> p2, pair<double, double> p3) {
     double res;

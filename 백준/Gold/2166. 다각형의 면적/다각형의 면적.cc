@@ -16,7 +16,7 @@ int main(void) {
     cin.tie(0);
     ios::sync_with_stdio(0);
 
-    double x, y;
+    int x, y;
     double result = 0;
     cin >> N;
     cin >> x >> y;
